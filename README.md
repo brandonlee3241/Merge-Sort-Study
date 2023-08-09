@@ -8,13 +8,13 @@ This project explores how the Merge Sort algorithm interacts with the CPU cache 
 # Methodology
 We conducted a series of experiments to assess the cache and memory locality characteristics of the Merge Sort algorithm. The methodology involves:
 
-## 1. Instrumenting Code: The Merge Sort algorithm is instrumented to track memory accesses and cache-related events during its execution.
+### 1. Instrumenting Code: The Merge Sort algorithm is instrumented to track memory accesses and cache-related events during its execution.
 
-## 2. Profiling with perf: The perf tool is used to collect performance-related data, such as cache misses, branch mispredictions, and CPU cycles.
+### 2. Profiling with perf: The perf tool is used to collect performance-related data, such as cache misses, branch mispredictions, and CPU cycles.
 
-## 3. Memory Profiling with Valgrind: Valgrind with the cachegrind tool is employed to simulate cache behavior and identify cache-related inefficiencies.
+### 3. Memory Profiling with Valgrind: Valgrind with the cachegrind tool is employed to simulate cache behavior and identify cache-related inefficiencies.
 
-## 4. Varying Input Sizes: The experiments are conducted with varying input sizes to observe how cache behavior changes with different memory access patterns.
+### 4. Varying Input Sizes: The experiments are conducted with varying input sizes to observe how cache behavior changes with different memory access patterns.
 
 # Tools Used
 perf: A Linux tool that provides a detailed view of various performance-related metrics, including CPU cycles, cache misses, and more.
